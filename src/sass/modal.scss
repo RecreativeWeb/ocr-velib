@@ -1,0 +1,52 @@
+/* Default Animation */
+
+.modal.fade-and-drop .modal-card {
+  transform: translate(0,-1000px);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.modal.fade-and-drop.is-active .modal-card {
+  transform: translate(0);
+  opacity: 1;
+  transition: all 200ms ease-in-out 100ms;
+}
+
+.modal.fade-and-drop .modal-background {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out 100ms;
+}
+
+.modal.fade-and-drop.is-active .modal-background {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+.modal {
+  display: flex;
+}
+
+.modal.is-active {
+}
+
+.modal {
+
+  .modal-background {
+    background: rgba(255, 255, 255, .8);
+  }
+
+  .modal-card-head,
+  .modal-card-foot {
+    background: #314e55;
+    color: $grey-light;
+    border-color: lighten(#314e55, 5%);
+  }
+  .modal-card-body {
+    background: lighten(#314e55, 3%);
+    color: $dark-invert;
+  }
+
+  .modal-card-title {
+    color: $dark-invert;
+  }
+}
