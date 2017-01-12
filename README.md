@@ -9,12 +9,12 @@ Cloner le projet.
 
 Installer les dépendances avec [yarn](https://yarnpkg.com/en/docs/install).
 
-```javascript
+```bash
 yarn install
 ```
 puis 
 
-```javascript
+```bash
 yarn run build
 ```
 
