@@ -1,6 +1,5 @@
 import Reservation from './class/Reservation';
 import Modal from './class/Modal';
-import SignaturePad from 'signature_pad';
 
 export default function () {
 
