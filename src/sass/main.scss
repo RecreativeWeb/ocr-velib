@@ -90,6 +90,12 @@ ul {
     margin-bottom: 1em;
     font-weight: bold;
 
+    small {
+      font-size: 100%;
+      opacity: .5;
+      display: inline-block;
+    }
+
     li {
       display: flex;
       flex-direction: column;

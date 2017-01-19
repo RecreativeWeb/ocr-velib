@@ -36,6 +36,9 @@ export default function () {
             // When a marker is clicked, we update the velib station info in the sidebar
             marker.addListener('click', function () {
 
+                aside.children('ul:first').html('<small>Chargement...</small>');
+                aside.children('button:first').hide();
+
                 // Get the url
                 let url = Velib.getUrl('record', marker.metadata.id);
 
@@ -87,6 +90,8 @@ export default function () {
         // Add the list and form inputs to the sidebar
         aside.children('ul:first').replaceWith(list);
         aside.find('div.inputs').replaceWith(inputs);
+
+        aside.children('button:first').show();
 
         // Add the sidebar class on body
         body.addClass('sidebar');

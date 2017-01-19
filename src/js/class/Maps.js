@@ -46,7 +46,7 @@ class Maps {
         return new google.maps.Map(this.mapContainer, {
             center: this.mapCenter,
             scrollwheel: false,
-            zoom: 15,
+            zoom: 13,
             styles: styles
         });
     }
